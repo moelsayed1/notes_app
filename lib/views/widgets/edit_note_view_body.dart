@@ -45,7 +45,7 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
             onChanged: (value) {
               title = value;
             },
-            hintText: 'Title',
+            hintText: widget.note.title,
           ),
           SizedBox(
             height: 18,
@@ -54,7 +54,7 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
             onChanged: (value) {
               subTitle = value;
             },
-            hintText: 'Content',
+            hintText: widget.note.subTitle,
             maxLines: 5,
           ),
         ],

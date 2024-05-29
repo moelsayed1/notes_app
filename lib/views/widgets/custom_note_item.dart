@@ -44,7 +44,7 @@ class CustomNoteItem extends StatelessWidget {
                 child: Text(
                   note.subTitle,
                   style: TextStyle(
-                    color: Color(0xff99753F),
+                    color: Colors.black.withOpacity(0.4),
                     fontSize: 18,
                   ),
                 ),
@@ -66,7 +66,7 @@ class CustomNoteItem extends StatelessWidget {
               child: Text(
                 note.date,
                 style: TextStyle(
-                  color: Color(0xff99753F),
+                  color: Colors.black.withOpacity(0.4),
                   fontSize: 16,
                 ),
               ),
