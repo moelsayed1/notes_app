@@ -28,6 +28,7 @@ class _NotesViewBodyState extends State<NotesViewBody> {
             height: 40,
           ),
           CustomAppBar(
+            onPressed: () {},
             title: 'Notes',
             icon: Icons.search,
           ),
