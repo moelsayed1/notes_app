@@ -35,7 +35,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               title = value;
             },
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           CustomTextField(
             hintText: 'Content',
             maxLines: 5,
@@ -43,9 +43,9 @@ class _AddNoteFormState extends State<AddNoteForm> {
               subTitle = value;
             },
           ),
-          SizedBox(height: 32),
-          ColorListView(),
-          SizedBox(height: 32,),
+          const SizedBox(height: 32),
+          const ColorListView(),
+          const SizedBox(height: 32,),
           BlocBuilder<AddNotesCubit, AddNotesState>(
             builder: (context, state) {
               return CustomButton(
@@ -68,7 +68,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               );
             },
           ),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
         ],
       ),
     );

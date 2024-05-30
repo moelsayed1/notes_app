@@ -23,7 +23,7 @@ class CustomButton extends StatelessWidget {
           ),
           backgroundColor: MaterialStateProperty.all(kPrimaryColor),
         ),
-        child: Text(
+        child: const Text(
           'Add',
           style: TextStyle(
             color: Colors.white,

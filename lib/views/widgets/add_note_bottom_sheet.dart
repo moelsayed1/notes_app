@@ -23,6 +23,13 @@ class AddNoteBottomSheet extends StatelessWidget {
           listener: (context, state) {
             if (state is AddNotesSuccess) {
               BlocProvider.of<NotesCubit>(context).fetchAllNotes();
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text(
+                    'Note added successfully!',
+                  ),
+                ),
+              );
               Navigator.pop(context);
             } else if (state is AddNotesFailure) {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -33,7 +40,7 @@ class AddNoteBottomSheet extends StatelessWidget {
           builder: (context, state) {
             return ModalProgressHUD(
               inAsyncCall: state is AddNotesLoading ? true : false,
-              child: SingleChildScrollView(
+              child: const SingleChildScrollView(
                 child: AddNoteForm(),
               ),
             );
